@@ -1,0 +1,39 @@
+graph{
+	fill-mode:gradient-vertical;
+	fill-color:#5f2c82,#49a09d ;
+}
+
+node{
+	padding:10px;
+	size:20px;
+	fill-mode:gradient-horizontal;
+	fill-color:#8E78FF,#FC7D7B;
+	text-offset: 0px,0px;
+	text-mode:normal;
+	text-color:white;
+	text-alignment:center;
+	text-background-color: #A7CC;
+	z-index: 2;
+	size-mode:fit;
+	shape:rounded-box;
+	icon-mode:at-left;
+	icon: url('./citySprite2.png');
+}
+edge{
+	size: 5px;
+	shape:angle;
+	arrow-shape:arrow;
+	arrow-size:5px,5px;
+	padding: 20px;
+	fill-mode:gradient-horizontal;
+	fill-color:#ff0084,#480048;
+	text-color:white;
+	text-background-mode:rounded-box;
+	text-background-color: #A7CC;
+	text-style:bold-italic;
+	text-alignment:under; 
+}
+
+node:selected{
+	fill-color:blue;
+}
