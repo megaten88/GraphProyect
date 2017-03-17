@@ -67,7 +67,6 @@ public class GraphMapping extends javax.swing.JFrame {
         view.setSize(new Dimension(1100, 800));
         this.add((Component) view, BorderLayout.SOUTH);
         view.openInAFrame(false);
-        viewer.setCloseFramePolicy(Viewer.CloseFramePolicy.HIDE_ONLY);
         view.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
                 selectNodes(evt);
@@ -93,6 +92,7 @@ public class GraphMapping extends javax.swing.JFrame {
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
+        distanceB.setBackground(new java.awt.Color(73, 225, 207));
         distanceB.setText("Ciudad a Ciudad Distancia");
         distanceB.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -100,6 +100,7 @@ public class GraphMapping extends javax.swing.JFrame {
             }
         });
 
+        costC.setBackground(new java.awt.Color(134, 246, 248));
         costC.setText("Ciudad a Ciudad Costo");
         costC.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
